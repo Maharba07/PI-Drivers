@@ -1,0 +1,207 @@
+.home-title {
+  margin-top: 75px;
+  margin-bottom: 50px;
+  font-size: 76px;
+  color: rgb(252, 251, 250);
+  text-shadow: 5px 1px 10px rgb(165, 120, 120);
+  font-family: fantasy;
+  position: relative; 
+  z-index: 3; /* Coloca el texto por encima de la imagen */
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagecontainer {
+  width: 860px;
+  height: 255px;
+  background-image: url("../../../img/81-817952_formula-1-logo-png-transparent-png.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.imagecontainer::before {
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 50px;
+  width: 450px;
+  height: 300px;
+  background-image: url("../../../img/gratis-png-formula-uno-lotus-f1-lotus-cars-auto-racing-formula-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.imagecontainer::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 500px;
+    height: 300px;
+    background-image: url("../../../img/png-clipart-formula-one-car-formula-1-radio-controlled-car-formula-racing-formula-1-racing-car.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .exit-button{
+    border: none;
+    color: white;
+    position: absolute;
+    top: 250px;
+    right: 700px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #31230872;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0
+    6px 20px 0 rgba(0,0,0,0.19);
+    
+
+  }
+
+  .create-button{
+    border: none;
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 600px;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #31230872;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0
+    6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  @media (max-width: 768px ) {
+    .home-title {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 40px;
+      color: rgb(252, 251, 250);
+      text-shadow: 5px 1px 10px rgb(165, 120, 120);
+      font-family: fantasy;
+      position: relative; /* Añadir esta propiedad para establecer un contexto de apilamiento */
+      z-index: 1; /* Coloca el texto por encima de la imagen */
+    }
+
+    .imagecontainer {
+      width: 500px;
+      height: 155px;
+      background-image: url("../../../img/81-817952_formula-1-logo-png-transparent-png.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .imagecontainer::before {
+      content: "";
+      background-image: none;
+    }
+    
+    .imagecontainer::after {
+        content: "";
+        background-image: none;
+      }
+
+      .exit-button{
+        border: none;
+        color: white;
+        position: absolute;
+        top: 275px;
+        right: 500px;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #31230872;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0
+        6px 20px 0 rgba(0,0,0,0.19);
+        
+    
+      }
+    
+      .create-button{
+        border: none;
+        color: white;
+        position: absolute;
+        top: 275px;
+        left: 500px;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #31230872;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0
+        6px 20px 0 rgba(0,0,0,0.19);
+      }
+  }
+
+  @media (max-width: 576px ) {
+    .home-title {
+      margin-top: 40px;
+      margin-bottom: 50px;
+      font-size: 25px;
+      color: rgb(252, 251, 250);
+      text-shadow: 5px 1px 10px rgb(165, 120, 120);
+      font-family: fantasy;
+      position: relative; /* Añadir esta propiedad para establecer un contexto de apilamiento */
+      z-index: 1; /* Coloca el texto por encima de la imagen */
+    }
+
+    .imagecontainer {
+      width: 350px;
+      height: 100px;
+      background-image: url("../../../img/81-817952_formula-1-logo-png-transparent-png.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+      .exit-button{
+        border: none;
+        color: white;
+        position: absolute;
+        top: 175px;
+        right: 200px;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #31230872;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0
+        6px 20px 0 rgba(0,0,0,0.19);
+        
+    
+      }
+    
+      .create-button{
+        border: none;
+        color: white;
+        position: absolute;
+        top: 175px;
+        left: 200px;
+        padding: 15px 32px;
+        text-align: center;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #31230872;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5), 0
+        6px 20px 0 rgba(0,0,0,0.19);
+      }
+  }
+
+ 

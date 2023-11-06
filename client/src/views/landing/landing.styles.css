@@ -1,0 +1,18 @@
+.landing-page {
+  background-image: url("../../../img/image_processing20220404-20113-tnsr7m.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-button:hover::after {
+    content: "LETS DRIVE!!!";
+    
+  }
+

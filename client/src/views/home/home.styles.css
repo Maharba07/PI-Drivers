@@ -107,9 +107,7 @@
   .imagecontainer {
     width: 500px;
     height: 155px;
-    background-image: url("../../../img/81-817952_formula-1-logo-png-transparent-png.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    
   }
 
   .imagecontainer::before {
@@ -125,35 +123,14 @@
   }
 
   .exit-button {
-    border: none;
-    color: white;
-    position: absolute;
     top: 275px;
     right: 500px;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #31230872;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .create-button {
-    border: none;
-    color: white;
-    position: absolute;
     top: 275px;
     left: 500px;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #31230872;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
   }
 }
 
@@ -165,48 +142,27 @@
     color: rgb(252, 251, 250);
     text-shadow: 5px 1px 10px rgb(165, 120, 120);
     font-family: fantasy;
-    position: relative; /* Añadir esta propiedad para establecer un contexto de apilamiento */
-    z-index: 1; /* Coloca el texto por encima de la imagen */
+    position: relative; 
+    z-index: 1;
   }
 
   .imagecontainer {
     width: 350px;
     height: 100px;
-    background-image: url("../../../img/81-817952_formula-1-logo-png-transparent-png.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    
   }
 
   .exit-button {
-    border: none;
-    color: white;
-    position: absolute;
+    
     top: 150px;
     right: 200px;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #31230872;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
   }
 
   .create-button {
-    border: none;
-    color: white;
-    position: absolute;
     top: 150px;
     left: 200px;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #31230872;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5),
-      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
   }
 
   .ordenar-nombre {
@@ -219,4 +175,3 @@
     left: 175px;
   }
 }
-

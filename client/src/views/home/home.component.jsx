@@ -12,6 +12,8 @@ function Home() {
   const allDrivers = useSelector((state) => state.allDrivers);
   const [searchString, setSearchString] = useState("");
 
+  
+
   function handleChange(e) {
     e.preventDefault();
     setSearchString(e.target.value);
@@ -30,6 +32,8 @@ function Home() {
     // })
   }, [dispatch]);
   return (
+    
+
     <div className="home">
       <div className="imagecontainer">
       <h2 className="home-title">Welcome Drivers!</h2>

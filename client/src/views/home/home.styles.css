@@ -66,9 +66,8 @@
   border: none;
   color: white;
   position: absolute;
-  top: 250px;
-  right: 700px;
-  padding: 15px 32px;
+  top: 320px;
+  right: 550px;
   text-align: center;
   font-size: 16px;
   transition-duration: 0.4s;
@@ -80,9 +79,8 @@
   border: none;
   color: white;
   position: absolute;
-  top: 250px;
-  left: 600px;
-  padding: 15px 32px;
+  top: 320px;
+  left:450px;
   text-align: center;
   font-size: 16px;
   transition-duration: 0.4s;

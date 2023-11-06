@@ -10,6 +10,7 @@ function Create() {
     LastName: "",
     Nationality: "",
     Teams: "",
+    DateOfBirth:"",
   });
 
   const [error, setError] = useState({
@@ -17,6 +18,7 @@ function Create() {
     LastName: "*",
     Nationality: "*",
     Teams: "*",
+    DateOfBirth:"*",
   });
 
   const validate = (input) => {
@@ -87,6 +89,10 @@ function Create() {
             <label>Teams: </label>
             <input name="Teams" value={input.value} onChange={handleChange} />
             <span>{error.Teams}</span>
+          </div>
+          <div>
+            <label>DateOfBirth: </label>
+            <input name="DateOfBirth" value={input.value} onChange={handleChange} />
           </div>
           <Link to="/home/">
             <button className="return-create">Return</button>

@@ -33,7 +33,6 @@ function Home() {
     <div className="home">
       <div className="imagecontainer">
       <h2 className="home-title">Welcome Drivers!</h2>
-      
       </div>
       <Navbar handleChange={handleChange} handleSubmit={handleSubmit} />
       <Link to="/">
@@ -43,6 +42,9 @@ function Home() {
         <button className="create-button">Wanna Create?</button>
       </Link>
       <Cards allDrivers={allDrivers} searchString={searchString} />
+      <div className="imagecontainer2">
+
+      </div>
     </div>
 
   );

@@ -17,7 +17,6 @@
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: #31230872;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -26,12 +25,11 @@
   color: white;
   position: absolute;
   top: 320px;
-  left: 500px;
+  left: 600px;
   text-align: center;
   font-size: 16px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: #31230872;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 

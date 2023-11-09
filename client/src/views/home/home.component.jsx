@@ -12,8 +12,6 @@ function Home() {
   const allDrivers = useSelector((state) => state.allDrivers);
   const [searchString, setSearchString] = useState("");
 
-  
-
   function handleChange(e) {
     e.preventDefault();
     setSearchString(e.target.value);
@@ -27,16 +25,11 @@ function Home() {
 
   useEffect(() => {
     dispatch(getDrivers());
-    // return (()=>{
-    //   clearDetail()
-    // })
   }, [dispatch]);
   return (
-    
-
     <div className="home">
       <div className="imagecontainer">
-      <h2 className="home-title">Welcome Drivers!</h2>
+        <h2 className="home-title">Welcome Drivers!</h2>
       </div>
       <Navbar handleChange={handleChange} handleSubmit={handleSubmit} />
       <Link to="/">
@@ -45,15 +38,10 @@ function Home() {
       <Link to="/create">
         <button className="create-button">Wanna Create?</button>
       </Link>
+      <div className="imagecontainer2"></div>
       <Cards allDrivers={allDrivers} searchString={searchString} />
-      <div className="imagecontainer2">
-
-      </div>
     </div>
-
   );
-    
-    
 }
 
 export default Home;

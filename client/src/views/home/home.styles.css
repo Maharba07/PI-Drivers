@@ -1,4 +1,5 @@
 .home-title {
+  position: absolute;
   margin-top: 75px;
   margin-bottom: 50px;
   font-size: 76px;
@@ -13,7 +14,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
+
 
 .imagecontainer {
   width: 860px;
@@ -52,7 +55,7 @@
 .imagecontainer2 {
   content: "";
   position: absolute;
-  top: 400px;
+  top: 315px;
   left: 30px;
   width: 500px;
   height: 300px;
@@ -67,7 +70,7 @@
   color: white;
   position: absolute;
   top: 320px;
-  right: 550px;
+  right: 525px;
   text-align: center;
   font-size: 16px;
   transition-duration: 0.4s;
@@ -86,6 +89,101 @@
   transition-duration: 0.4s;
   cursor: pointer;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 2560px ) {
+  .home-title {
+    position: absolute;
+    margin-top: 75px;
+    margin-bottom: 50px;
+    font-size: 76px;
+    color: rgb(252, 251, 250);
+    text-shadow: 5px 1px 10px rgb(165, 120, 120);
+    font-family: fantasy;
+    position: relative;
+    z-index: 3; /* Coloca el texto por encima de la imagen */
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  
+  .imagecontainer {
+    width: 860px;
+    height: 255px;
+    background-image: url("../../../img/81-817952_formula-1-logo-png-transparent-png.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .imagecontainer::before {
+    content: "";
+    position: absolute;
+    top: 275px;
+    right: 150px;
+    width: 450px;
+    height: 300px;
+    background-image: url("../../../img/gratis-png-formula-uno-lotus-f1-lotus-cars-auto-racing-formula-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  
+  .imagecontainer::after {
+    content: "";
+    position: absolute;
+    top: 275px;
+    left: 150px;
+    width: 500px;
+    height: 300px;
+    background-image: url("../../../img/png-clipart-formula-one-car-formula-1-radio-controlled-car-formula-racing-formula-1-racing-car.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  
+  .imagecontainer2 {
+    content: "";
+    position: absolute;
+    top: 560px;
+    left: 150px;
+    width: 500px;
+    height: 300px;
+    background-image: url("../../../img/gratis-png-racing-flags-formula-1-auto-racing-formula-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+  
+  .exit-button {
+    border: none;
+    color: white;
+    position: absolute;
+    top: 515px;
+    right: 525px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .create-button {
+    border: none;
+    color: white;
+    position: absolute;
+    top: 515px;
+    left:450px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
 
 @media (max-width: 768px) {
@@ -119,12 +217,12 @@
   }
 
   .exit-button {
-    top: 275px;
+    top: 200px;
     right: 500px;
   }
 
   .create-button {
-    top: 275px;
+    top: 200px;
     left: 500px;
     
   }

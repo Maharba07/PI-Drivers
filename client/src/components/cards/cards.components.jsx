@@ -31,7 +31,7 @@ function Cards({ allDrivers, searchString }) {
   });
 
   return (
-    <div className="cards-list">
+    <div className="cards-list" >
       <div>
         <button className="ordenar-nombre" onClick={() => toggleOrder("name")}>
           Sort By Name{" "}
@@ -45,7 +45,7 @@ function Cards({ allDrivers, searchString }) {
       {filteredDrivers.map((driver) => (
         <Card key={driver.id} driver={driver} />
       ))}
-    </div>
+    </div> 
   );
 }
 

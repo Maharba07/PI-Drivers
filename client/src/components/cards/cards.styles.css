@@ -1,10 +1,12 @@
 .cards-list {
   width: 100%;
+  height: 600px;
   margin: 0 auto;
   padding-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+ 
 }
 
 .ordenar-nombre {
@@ -59,4 +61,42 @@
     top: 225px;
     left: 500px;
   }
+}
+
+@media (min-width: 2560px) {
+  .cards-list {
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+   
+  }
+  
+  .ordenar-nombre {
+    top: 515px;
+    right: 850px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .ordenar-fecha {
+    border: none;
+    color: white;
+    position: absolute;
+    top: 515px;
+    left: 850px;
+    text-align: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  
 }

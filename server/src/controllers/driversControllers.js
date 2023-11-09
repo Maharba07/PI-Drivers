@@ -22,7 +22,7 @@ const createDriverDB = async (
 const getDriverById = async (id, source) => {
   const drivers =
     source === "api"
-      ? (await axios.get(`http://localhost:5000/drivers/${id}`)).data
+      ? (await axios.get(`http://localhost:5000/drivers/${id}?limit=9`)).data
       : await Driver.findByPk(id);
   return drivers;
 };
@@ -41,7 +41,7 @@ const cleanDriver = (arr)=>{
 
 const getAllDrivers = async () => {
   const allDrivers = await Driver.findAll();
-  const infoApi = (await axios.get("http://localhost:5000/drivers/"))
+  const infoApi = (await axios.get("http://localhost:5000/drivers?limit=9"))
     .data;
   const allDriversApi = cleanDriver(infoApi)
 
@@ -49,7 +49,7 @@ const getAllDrivers = async () => {
 };
 
 const getDriverByName = async(name)=>{
-  const infoApi = (await axios.get("http://localhost:5000/drivers/")).data;
+  const infoApi = (await axios.get("http://localhost:5000/drivers?limit=9")).data;
   const allDriversApi = cleanDriver(infoApi)
   const driversFilter = allDriversApi.filter(drivers=>drivers.name.forename===name)
   const driverDb = await Driver.findAll({where: {name:name}});
